@@ -17,8 +17,15 @@ import sys
 while True:
     print("Now running pet simulator v.2.0.0")
     time.sleep(1)
+    print("If you would ever like to exit the simulator while running, please type in admincommandsystemshutdown.v.2.0.1 when the system asks you one of the three questions. \nPlease don't name your pet that though.")
+    time.sleep(1)
     pet_name = input("What is your pet's name?\n" )
+    if pet_name == "admincommandsystemshutdown.v.2.0.1":
+        print("command understood.")
+        break
     pet_status = input("Is your pet happy, sad, or hungry?\n")
+    if pet_status == "admincommandsystemshutdown.2.0.1":
+        break
     pet_status = pet_status.lower()
     if pet_status == "happy":
         print(f"{pet_name} is doing a victory dance.\n")
